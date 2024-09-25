@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =========================================                    Heading            ============================================= */
+#heading{
+    background-color: red;
+}
+#heading p{
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ============================================                   Header           ============================================= */
+
+#header{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    padding: 15px 35px 15px 35px;
+    border: 1px solid grey;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+#header article div img{
+    margin-left: 250px;
+}
+#user div a{
+    text-decoration: none;
+}
+#header #search{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#header #search div{
+    margin: 20px;
+}
+
+#searchpage{
+    border: 1px solid grey;
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px; 
+    margin-left: 0px;
+ }
+    
+#searchpage a,input{
+        border: none;
+        outline: none;
+    }
+    
+#searchpage input{
+        width: 200px;
+        color: rgb(184, 183, 183)
+    } 
+ #searchpage a{
+    margin: 5px;
+}
+
+#cart a{
+    margin: 10px;
+}
+
+/* ===========================================                     Navbar           =============================================*/
+#navbar{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+#navbar div{
+    margin: 15px;
+}
+
+#navbar div a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ======================================               Home          ================================================= */
+
+#home div{
+    height: 50vh;
+    width: 200vw;
+}
