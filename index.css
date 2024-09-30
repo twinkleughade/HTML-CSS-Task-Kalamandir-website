@@ -28,7 +28,15 @@
     top: 0px;
     background-color: white;
 }
+#header article div a{
+    color: black;
+    text-decoration: none;
+}
 
+#header article div a:hover{
+    color: red;
+    text-decoration: none;
+}
 #header article div img{
     margin-left: 250px;
 }
