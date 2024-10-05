@@ -3,6 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
 
 /* =========================================                    Heading            ============================================= */
 #heading{
@@ -11,10 +17,10 @@
 #heading p{
     color: white;
     font-size: 18px;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 /* ============================================                   Header           ============================================= */
 
 #header{
@@ -27,6 +33,7 @@
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 10;
 }
 #header article div a{
     color: black;
@@ -49,8 +56,6 @@
     text-align: center;
 }
 
-
-
 /* ===========================================                     Navbar           =============================================*/
 #navbar{
     display: flex;
@@ -68,6 +73,10 @@
     color: black;
     font-weight: bold;
     text-align: center;
+}
+
+#navbar div a:hover{
+    color: red;
 }
 
 /* ==============================================         mobile nav         =================================*/
@@ -96,17 +105,23 @@
     list-style: none;
 }
 #shownav{
-    width: 300px;
+    width: 500px;
     background-color: white;
     height: 50vh;
     position: absolute;
     top: 0px;
-    left: -400px;
-   
+    left: -500px; 
 }
+#shownav article #menu{
+    text-align: center;
+    font-size: 20px;
+}
+
 #shownav article div a{
     color: black;
     padding: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 @media(max-width:768px){
@@ -124,7 +139,7 @@
         padding: 10px 50px 10px 50px;
     }
     #shownav{
-        width: 150px;
+        width: 300px;
         background-color: white;
         height: 70vh;
         position: absolute;
@@ -157,9 +172,9 @@
     }
 
     #shownav{
-        width: 150px;
+        width: 200px;
         background-color: white;
-        height: 70vh;
+        height: 80vh;
         position: absolute;
         top: 0px;
         left: -400px;
@@ -212,7 +227,7 @@
 
 #home div img{
     height: 700px;
-    width: 1400px;
+    width: 1500px;
     margin-left: 5px;
 }
 
@@ -258,68 +273,119 @@
 }
 
 /* ======================================               second home      ================================================= */
-#second_home{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    padding: 30px;
+
+#second_home article{
+    display: flex;
 }
 
-#second_home  article div img{
-    width: 450px;
-    height: 300px;
-    padding: 20px; 
-   transition: all .40s;
-} 
+#second_home article div{
+    padding: 50px;
+}
 
- #second_home article div img:hover{
-   transform: scale(0.9);
-}  
+#second_home article div img{
+    width: 400px;
+    height: 300px;
+    transition: all .40s linear;
+}
+
+#second_home article div img:hover{
+    width: 400px;
+    height: 300px;
+    transform: scale(1.2);
+}
 
 @media(max-width:1024px){
-    #second_home{
-        grid-template-columns: auto auto auto ;
+    #second_home article div{
         padding: 30px;
+        margin-left: 20px;
     }
     
-    #second_home  article div img{
-        width: 330px;
-        height: 250px;
+    #second_home article div img{
+        width: 250px;
+        height: 300px;
+    }
+    
+    #second_home article div img:hover{
+        width: 250px;
+        height: 300px;
     } 
 }
-
 @media(max-width:768px){
-    #second_home{
-        grid-template-columns: auto auto;
+    #second_home article div{
+        padding: 20px;
     }
     
-    #second_home  article div img{
-        width: 380px;
-        height: 300px;
+    #second_home article div img{
+        width: 190px;
+        height: 230px;
+    }
+    
+    #second_home article div img:hover{
+        width: 190px;
+        height: 230px;
     } 
 }
 
 @media(max-width:426px){
-    #second_home{
-        grid-template-columns: auto;
-        padding: 30px;
+    #second_home article{
+        display: block;
+
     }
     
-    #second_home  article div img{
-        width: 400px;
-        height: 250px;
-}
+    #second_home article div{
+        padding: 20px;
+        margin-left: 50px;
+    }
+    
+    #second_home article div img{
+        width: 250px;
+        height: 180px;
+    }
+    
+    #second_home article div img:hover{
+        width: 250px;
+        height: 180px;
+    }
 }
 @media(max-width:375px){
-    #second_home{
-        grid-template-columns: auto;
-        padding: 20px;
+    #second_home article{
+        display: block;
     }
     
-    #second_home  article div img{
-        width: 350px;
-        height: 250px;
+    #second_home article div{
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    #second_home article div img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    #second_home article div img:hover{
+        width: 150px;
+        height: 150px;
+    }
 }
+@media(max-width:320px){
+    #second_home article{
+        display: block;
+    }
+    
+    #second_home article div{
+        padding: 20px;
+        margin-left: 50px;
+    }
+    
+    #second_home article div img{
+        width: 170px;
+        height: 120px;
+    }
+    
+    #second_home article div img:hover{
+        width: 170px;
+        height: 120px;
+    }
 }
 
 /* ==================================================             new arrivals heading       ======================================= */
